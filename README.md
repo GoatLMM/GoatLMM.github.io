@@ -1,2 +1,2 @@
-# WizardCoder
+# GOAT-Bench
  
