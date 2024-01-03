@@ -26,7 +26,7 @@
 
 
     <title>GOAT-Bench</title>
-    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="static/images/goat.jpg">
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
     <link rel="stylesheet" href="static/css/bulma.min.css">
     <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
@@ -67,7 +67,7 @@
                                 target="_blank">Ruichao Yang</a><sup></sup>,</span>
 
                             <span class="author-block"><a href="https://majingcuhk.github.io/"
-                                    target="_blank">Jing Ma</a><sup>‡</sup>,</span>
+                                    target="_blank">Jing Ma</a><sup>‡</sup></span>
                         </div>
 
                         <div class="is-size-5 publication-authors">
@@ -130,7 +130,7 @@
                     <h2 class="title is-3">Abstract</h2>
                     <div class="content has-text-justified">
                         <p>
-                            The exponential growth of social media has profoundly transformed how information is created, disseminated, and absorbed, exceeding any precedent in the digital age. Regrettably, this explosion has also spawned a significant increase in the online abuse of memes. Evaluating the negative impact of memes is notably challenging, owing to their often subtle and implicit meanings, which are not directly conveyed through the overt text and imagery. In light of this, large multimodal models (LMMs) have emerged as a focal point of interest due to their remarkable capabilities in handling diverse multimodal tasks. In response to this development, our paper aims to thoroughly examine the capacity of various LMMs to discern and respond to the nuanced aspects of social abuse manifested in memes. We introduce the comprehensive meme benchmark, \benchname{}, comprising over 6K varied memes encapsulating themes such as implicit hate speech, sexism, and cyberbullying, etc. Utilizing \benchname{}, we delve into the ability of LMMs to accurately assess hatefulness, misogyny, offensiveness, sarcasm, and harmful content. Our extensive experiments across a range of LMMs reveal that current models still exhibit a deficiency in safety awareness, showing insensitivity to various forms of implicit abuse. We posit that this shortfall represents a critical impediment to the realization of safe artificial intelligence. The \benchname{} and accompanying resources are publicly accessible at \textcolor{magenta}{\url{goatlmm.github.io/goatbench/}}, contributing to ongoing research in this vital field.
+                            The exponential growth of social media has profoundly transformed how information is created, disseminated, and absorbed, exceeding any precedent in the digital age. Regrettably, this explosion has also spawned a significant increase in the online abuse of memes. Evaluating the negative impact of memes is notably challenging, owing to their often subtle and implicit meanings, which are not directly conveyed through the overt text and imagery. In light of this, large multimodal models (LMMs) have emerged as a focal point of interest due to their remarkable capabilities in handling diverse multimodal tasks. In response to this development, our paper aims to thoroughly examine the capacity of various LMMs to discern and respond to the nuanced aspects of social abuse manifested in memes. We introduce the comprehensive meme benchmark, GOAT-Bench, comprising over 6K varied memes encapsulating themes such as implicit hate speech, sexism, and cyberbullying, etc. Utilizing GOAT-Bench, we delve into the ability of LMMs to accurately assess hatefulness, misogyny, offensiveness, sarcasm, and harmful content. Our extensive experiments across a range of LMMs reveal that current models still exhibit a deficiency in safety awareness, showing insensitivity to various forms of implicit abuse. We posit that this shortfall represents a critical impediment to the realization of safe artificial intelligence.
                         </p>
                     </div>
                 </div>
@@ -142,16 +142,15 @@
     <section class="hero">
         <div class="hero-body">
             <div class="container is-max-desktop has-text-centered">
-                <h2 class="title is-3">Performance</h2>
+                <h2 class="title is-3">The GOAT Benchmark</h2>
                 <div class="columns is-centered">
                     <div class="column is-four-fifths">
                         <div class="item">
                             <!-- Your image here -->
-                            <img style="width: 100%;" src="static/images/radar.png" alt="radar" />
-                            <!-- <h2 class="subtitle"> -->
-                                <!-- Figure 1: A diagram illustrating the three steps of our Reinforcement Learning from Evol-Instruct Feedback (RLEIF): (1) supervised fine-tuning (SFT), (2) -->
-<!-- Instruction Reward Model (IRM) training and Process-supervised Reward Model (PRM) training, and (3) Active Evol-Instruct and reinforcement learning via proximal policy optimization (PPO). -->
-                            <!-- </h2> -->
+                            <img style="width: 100%;" src="static/images/goat-bench.png" alt="goatbench" />
+                            <p>
+                                We introduce the GOAT-Bench, a comprehensive and specialized dataset designed to evaluate large multimodal models through meme-based multimodal social abuse. GOAT-Bench comprises over 6K diverse memes, encompassing a range of themes including hate speech and offensive content. Our focus is to assess the ability of LMMs to accurately identify online abuse, specifically in terms of hatefulness, misogyny, offensiveness, sarcasm, and harmfulness. We meticulously control for the granularity of each specific meme task to facilitate a detailed analysis. Furthermore, we extend our evaluation to assess the effectiveness of thought chains in discerning the underlying implications of memes for deducing their potential threat to safety.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -159,7 +158,7 @@
         </div>
     </section>
 	
-	    <section class="hero">
+    <section class="hero">
         <div class="hero-body">
             <div class="container is-max-desktop has-text-centered">
                 <h2 class="title is-3">Experiment Results</h2>
@@ -167,7 +166,9 @@
                     <div class="column is-four-fifths">
                         <div class="item">
                             <!-- Your image here -->
-                            <img style="width: 100%;" src="static/images/exp_wizcoder.png" alt="wizardcoder" />
+                            <img style="width: 100%;" src="static/images/radar.png" alt="radar" />
+                            <img style="width: 100%;" src="static/images/table1.png" alt="table1" />
+                            <img style="width: 100%;" src="static/images/table2.png" alt="table2" />
                             <!-- <h2 class="subtitle"> -->
                                 <!-- Figure 1: A diagram illustrating the three steps of our Reinforcement Learning from Evol-Instruct Feedback (RLEIF): (1) supervised fine-tuning (SFT), (2) -->
 <!-- Instruction Reward Model (IRM) training and Process-supervised Reward Model (PRM) training, and (3) Active Evol-Instruct and reinforcement learning via proximal policy optimization (PPO). -->
@@ -579,11 +580,11 @@
     <section class="section" id="BibTeX">
         <div class="container is-max-desktop content">
             <h2 class="title">BibTeX</h2>
-            <pre><code>@article{luo2023wizardcoder,
-  title={WizardCoder: Empowering Code Large Language Models with Evol-Instruct},
-  author={Luo, Ziyang and Xu, Can and Zhao, Pu and Sun, Qingfeng and Geng, Xiubo and Hu, Wenxiang and Tao, Chongyang and Ma, Jing and Lin, Qingwei and Jiang, Daxin},
-  journal={arXiv preprint arXiv:2306.08568},
-  year={2023}
+            <pre><code>@article{lin2023goatbench,
+  title={GOAT-Bench: Safety Insights to Large Multimodal Models through Meme-Based Social Abuse},
+  author={Lin, Hongzhan and Luo, Ziyang and Wang, bo and Yang, Ruichao and Ma, Jing},
+  journal={?},
+  year={2024}
 }</code></pre>
         </div>
     </section>
